@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .topbar-actions,
+  .search-box {
+    width: 100%;
+  }
+
+  .panel-form,
+  .hero-card,
+  .auth-shell,
+  .blog-shell,
+  .gallery-shell {
+    padding: 24px;
+  }
+
+  .menu-item {
+    padding: 12px 14px;
+  }
+
+  .sidebar {
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-card,
+  .auth-shell,
+  .blog-shell,
+  .gallery-shell {
+    border-radius: 22px;
+  }
+
+  .search-box input,
+  .search-box button,
+  .button {
+    width: 100%;
+  }
+
+  .gallery-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

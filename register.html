@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PICSTORE | Register</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">☁</div>
+        <span>PICSTORE</span>
+      </div>
+      <nav class="menu">
+        <a href="dashboard.html" class="menu-item">Dashboard</a>
+        <a href="register.html" class="menu-item active">Register</a>
+        <a href="login.html" class="menu-item">Login</a>
+        <a href="create-blog.html" class="menu-item">Create Blog</a>
+        <a href="gallery.html" class="menu-item">Upload Image</a>
+        <a href="more-searched.html" class="menu-item">More Searched</a>
+        <a href="profile.html" class="menu-item">Profile</a>
+      </nav>
+    </aside>
+
+    <main class="panel panel-form">
+      <section class="auth-shell auth-register">
+        <h1>Register</h1>
+        <form id="registerForm" onsubmit="return validateRegister()">
+          <label>
+            <span>Username</span>
+            <input id="registerUsername" type="text" placeholder="Username" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="registerEmail" type="email" placeholder="Email" required>
+          </label>
+          <label>
+            <span>Password</span>
+            <input id="registerPassword" type="password" placeholder="Password" required>
+          </label>
+          <label>
+            <span>Confirm Password</span>
+            <input id="registerConfirm" type="password" placeholder="Confirm Password" required>
+          </label>
+          <button class="button button-primary" type="submit">Register</button>
+          <p class="info-line">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

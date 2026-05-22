@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PICSTORE | Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">☁</div>
+        <span>PICSTORE</span>
+      </div>
+      <nav class="menu">
+        <a href="dashboard.html" class="menu-item">Dashboard</a>
+        <a href="register.html" class="menu-item">Register</a>
+        <a href="login.html" class="menu-item">Login</a>
+        <a href="create-blog.html" class="menu-item">Create Blog</a>
+        <a href="gallery.html" class="menu-item active">Upload Image</a>
+        <a href="more-searched.html" class="menu-item">More Searched</a>
+        <a href="profile.html" class="menu-item">Profile</a>
+      </nav>
+    </aside>
+
+    <main class="panel">
+      <header class="topbar">
+        <form class="search-box" onsubmit="return false;">
+          <input id="gallerySearch" type="search" placeholder="Search gallery images...">
+          <button type="button" onclick="searchContent('gallerySearch')">Search</button>
+        </form>
+      </header>
+
+      <section class="gallery-shell">
+        <div class="gallery-header">
+          <div>
+            <h1>Image</h1>
+            <p>Upload, manage, and preview your images for use inside blogs.</p>
+          </div>
+        </div>
+
+        <div class="gallery-add-card">
+          <h2>Add New Image</h2>
+          <div id="authNotice" class="auth-notice"></div>
+          <form id="galleryAddForm" class="gallery-add-form" onsubmit="return addGalleryImage(event)">
+            <label>
+              <span>Image Title</span>
+              <input id="galleryImageTitle" type="text" placeholder="Enter a title for the image" required>
+            </label>
+            <label>
+              <span>Add Text</span>
+              <input id="galleryImageTags" type="text" >
+            </label>
+            <label class="file-label">
+              <span>Choose Image</span>
+              <input id="galleryUpload" type="file" accept="image/*" onchange="previewGalleryImage(event)" required>
+            </label>
+            <div id="galleryAddPreview" class="gallery-add-preview">No image selected</div>
+            <button class="button button-primary" type="submit">Add Image</button>
+          </form>
+        </div>
+
+        <div id="galleryGrid" class="gallery-grid">
+          <div class="gallery-item empty-state">
+            <p>No images uploaded yet.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/upload.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
