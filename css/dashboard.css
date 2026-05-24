@@ -6,23 +6,7 @@
   margin-top: 10px;
 }
 
-.info-panel h2,
-.feature-card h2 {
-  margin-top: 0;
-  font-size: 1.25rem;
-}
-
-.gallery-shell h1,
-.blog-shell h1 {
-  margin-bottom: 14px;
-}
-
-.blog-shell label input,
-.blog-shell label textarea {
-  border-color: rgba(18,30,36,0.12);
-}
-
 .panel-form {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
