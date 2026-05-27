@@ -273,6 +273,11 @@ a {
   color: rgba(238,246,255,0.86);
 }
 
+/* Make the heading inside the dark feature card white */
+.feature-card.feature-card-dark h2 {
+  color: #ffffff;
+}
+
 .feature-card-green,
 .info-panel-green {
   background: linear-gradient(180deg, rgba(38,212,197,0.14) 0%, rgba(44,206,199,0.18) 100%);
@@ -458,6 +463,15 @@ a {
 .info-panel-accent h2,
 .info-panel-accent p {
   color: #eef6ff;
+}
+
+/* Make trending list items white inside the accent info panel */
+.info-panel-accent .trending-list li {
+  color: #ffffff;
+}
+
+.info-panel-accent .trending-list li strong {
+  color: #ffffff;
 }
 
 .info-panel-green {
